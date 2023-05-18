@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/selecnivel.css">
+    <title>Memorama</title>
+  </head>
+  <body>
+    <header>
+        <div class = "img1">
+        <img src="./img/geometrico.png"> </div>
+        <h1><b>M e m o r a m a</b></h1>
+        <div class = "img2">
+        <img src="./img/libro.png"></div>
+    </header>
+      <div class = "contenedor">
+        <center><h2>Selecciona un nivel:</h2>
+        <table>
+            <tr><center>
+                <td><div class = "link1"><a href="nivel-novato.html">Novato</a></div></td>
+                <td><div class = "link2"><a href="nivel-intermedio.html">Intermedio</a></div></td>
+                <td><div class = "link3"><a href="nivel-avanzado.html">Avanzado</a></div></td>
+            </center></tr>
+         </table>  
+      </div>
+
+      <div class="boton">
+        <button onclick="window.modal1.showModal();"><img class = "como" src="./img/how.png"><b>¿Cómo jugar?</b></button>  
+      </div>
+            <dialog id="modal1">
+                <center><h3>¡Bienvenido al memorama matemático!</h3>
+                  <p>El objetivo del juego es emparejar correctamente las cartas que contienen preguntas con las cartas que tienen las respuestas correspondientes. 
+                    <br>Al hacer coincidir correctamente una pregunta y su respuesta, se obtiene un acierto.
+                  <p><b>¿Cómo se juega?</b></p></center>
+                  <ol>
+                    <li>Las cartas estarán colocadas boca abajo divididas en dos colores: azul para las preguntas y verdes para las respuestas. </li>
+                    <li>El jugador voltea dos cartas al azar, una de cada caja, revelando la pregunta de una y la respuesta de otra. Comprobara si la respuesta corresponde a la pregunta.</li>
+                    <li>Si la pregunta y la respuesta son correctas, el jugador ha encontrado una pareja y obtiene un acierto. 
+                      <br>En este caso, el jugador puede volver a jugar y voltear dos cartas más.</li>
+                    <li>Si la pregunta y la respuesta no coinciden, las cartas se volveran a colocar boca abajo en su posición original, conservando el orden en el que estaban.</li>
+                    <li>El juego termina cuando se han encontrado todas las parejas de preguntas y respuestas.</li>
+                    <li>De no haber conseguido juntar todos los pares dentro del número de intentos establecidos el jugador habrá perdido.</li>
+                    </ol>
+                  <center><p><b>¡Diviértete jugando al memorama de preguntas y respuestas y disfruta de desafiar tus conocimientos y memoria!</b></p>
+                  <img class = "como" src="./img/abaco.png"></center>
+                <br>
+                  <button onclick="window.modal1.close();">Cerrar</button>
+              </dialog>
+
+  </body>
+</html>

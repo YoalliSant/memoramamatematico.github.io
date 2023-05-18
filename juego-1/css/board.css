@@ -1,0 +1,21 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    text-align: center;
+    margin: 2rem;
+}
+
+table{
+    width: 20%;
+    border-spacing: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+.board-game{
+    width: 100%;
+    margin: 0, 0, 0, 0;
+}
